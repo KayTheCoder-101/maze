@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maze Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hud">
+    ⏱ Time: <span id="time">00:00</span> | 🚀 Level: <span id="level">1</span>
+  </div>
+  <div id="maze-container"></div>
+
+  <div id="level-complete" class="popup hidden">
+    <h1>🎉 You Passed!</h1>
+    <button onclick="nextLevel()">Next Level</button>
+  </div>
+
+  <div id="level-failed" class="popup hidden">
+    <h1>💀 You Lost!</h1>
+    <button onclick="retryLevel()">Retry</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
